@@ -1,4 +1,10 @@
-# def first_word(text: str) -> str:
+def first_word(text: str) -> str:
+
+    a = str.replace(text, '.', ' ')
+    b = str.replace(a, ',', ' ')
+
+    c = b.split()
+    return c[0]
 #     count = 0
 #     sublist = []
 #
@@ -15,8 +21,7 @@
 #     return ''.join(sublist)
 #
 #
-# if __name__ == '__main__':
-#     print("Example:")
-#     print(first_word("... and so on ..."))
+if __name__ == '__main__':
+    print("Example:")
+    print(first_word("..., and so on ..."))
 
-print(ord("'"))
