@@ -29,6 +29,8 @@ def first_word(text: str) -> str:
             else:
                 continue
         else:
+            # Не могу понять почему в тесте строки 46 не пропускает ord(i) == 39
+            # хотя по ascii кодам символ "'" равен 39
             if ord(i) in range(65, 90) or ord(i) in range(97, 122) or ord(i) == 39:
                 sublist.append(i)
                 count += 1
