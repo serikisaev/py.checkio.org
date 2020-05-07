@@ -34,6 +34,7 @@ def second_index(text: str, symbol: str) -> [int, None]:
 
     return result[1]
 
+
 if __name__ == '__main__':
     print('Example:')
     print(second_index("sims", "s"))
