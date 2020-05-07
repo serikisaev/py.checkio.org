@@ -10,14 +10,7 @@
 
 
 def between_markers(text: str, begin: str, end: str) -> str:
-    count = 0
-    for i in text:
-        count += 1
-        if i == begin:
-            a = count
-        if i == end:
-            b = count
-    return(text[a:b-1])
+    return (text.split(begin)[1].split(end))[0]
 
 
 if __name__ == '__main__':
