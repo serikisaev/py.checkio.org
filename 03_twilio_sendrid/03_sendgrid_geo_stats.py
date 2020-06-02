@@ -13,7 +13,7 @@ def best_country(str_date):
     })
     stats = json.loads(response.body)
     max_data = max(stats[0]['stats'], key=lambda a: a['metrics']['unique_clicks'])
-    return (max_data['name'])
+    return max_data['name']
 
 
 if __name__ == '__main__':
